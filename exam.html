@@ -49,7 +49,7 @@
                 category.push(val.name)
             })
 
-            var root = d3.hierarchy(data).sum(function (d) { return d.value })
+            const root = d3.hierarchy(data).sum(function (d) { return d.value })
             d3.treemap()
                 .size([w, h])
                 .padding(1)
