@@ -1,18 +1,44 @@
 <script src="https://d3js.org/d3.v6.min.js"></script>
+<link rel="stylesheet" href="exam.css">
 
 <div id="treemap-diagram">
-    <div id="title">Video Game Sales</div>
-    <div id="desciption"></div>
+    <div id="tooltip" data-value></div>
+    <div id="title">Kickstarter Pledges</div>
+    <div id="description">Top 100 Most Sold Product Grouped</div>
     <div id="graph"></div>
     <div id="legend"></div>
-    <div id="tooltip" data-value></div>
 </div>
 
 <script>
+    const color = [
+        '#61EE65',
+        '#C93B5F',
+        '#DB6503',
+        '#40FDC4',
+        '#5496B3',
+        '#21B5CA',
+        '#C1032C',
+        '#CE5987',
+        '#E2ABFA',
+        '#66F51E',
+        '#66F51E',
+        '#18EBD3',
+        '#49FB1D',
+        '#F372BB',
+        '#F55CB5',
+        '#816E95',
+        '#DE7325',
+        '#A02091',
+        '#EFFE4E',
+    ]
+    const w = 1000;
+    const h = 500;
+    const padding = 50;
+    fetch('https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json')
+        .then(response => response.json())
+        .then(data => {
 
+        })
 </script>
 
-<!-- Kickstarter Pledges: https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json -->
-<!-- Movie Sales: https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json -->
-<!-- Video Game Sales: https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json -->
 <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
