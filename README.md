@@ -15,3 +15,6 @@ Display data as a treemap.
 9. The rect elements in the legend should use at least 2 different fill colors.
 10. I can mouse over an area and see a tooltip with a corresponding `id="tooltip`" which displays more information about the area.
 11. My tooltip should have a data-value property that corresponds to the data-value of the active area.
+
+### Demo
+[Link Demo](https://codepen.io/hadinhtu97/full/ZEpQaBz)
